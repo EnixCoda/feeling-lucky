@@ -8,7 +8,7 @@ module.exports = {
 	stats: 'errors-only',
 	entry: {
 		background: './source/background',
-		options: './source/options'
+		content: './source/content',
 	},
 	output: {
 		path: path.join(__dirname, 'distribution'),

@@ -1,2 +1,20 @@
-// eslint-disable-next-line import/no-unassigned-import
-import './options-storage';
+chrome.runtime.onInstalled.addListener(function () {
+	chrome.contextMenus.create({
+		title: "Feeling Lucky",
+		contexts: ["selection"],
+		id: "feeling-lucky",
+	});
+});
+
+chrome.contextMenus.onClicked.addListener(function (info) {
+	const selectionText = info.selectionText;
+	if (!selectionText) return;
+	const search = new URLSearchParams({
+		q: selectionText,
+		btnI: "",
+	});
+	chrome.tabs.create({
+		url: "http://www.google.com/search?" + search.toString(),
+		active: true,
+	});
+});
