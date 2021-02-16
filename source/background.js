@@ -1,20 +1,20 @@
-chrome.runtime.onInstalled.addListener(function () {
+chrome.runtime.onInstalled.addListener(function() {
 	chrome.contextMenus.create({
-		title: "Feeling Lucky",
+		title: "Feeling lucky",
 		contexts: ["selection"],
-		id: "feeling-lucky",
+		id: "feeling-lucky"
 	});
 });
 
-chrome.contextMenus.onClicked.addListener(function (info) {
+chrome.contextMenus.onClicked.addListener(function(info) {
 	const selectionText = info.selectionText;
 	if (!selectionText) return;
 	const search = new URLSearchParams({
 		q: selectionText,
-		btnI: "",
+		btnI: ""
 	});
 	chrome.tabs.create({
 		url: "http://www.google.com/search?" + search.toString(),
-		active: true,
+		active: true
 	});
 });
