@@ -1,6 +1,6 @@
 {
 	"name": "Feeling Lucky",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Quick search selected text using Google's I'm feeling lucky.",
 	"homepage_url": "https://github.com/EnixCoda/feeling-lucky",
 	"manifest_version": 2,
