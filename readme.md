@@ -10,6 +10,12 @@ This extension is for the lucky ones. It works as a quick access Google's I'm fe
 
 ![use example](./media/introduction.png)
 
+### Auto redirect
+
+![auto redirect](./media/autoRedirect.png)
+
+If you are taken to domains other than `google.com`, e.g. `google.com.hk`, before hitting your lucky result. You can activate this extension on that domain to enable auto-skip in the future.
+
 ## Install
 
 [![Install for Chrome](./media/ChromeWebStoreBadge.svg)](https://chrome.google.com/webstore/detail/feeling-lucky/gkpblaimadclmdfppcoeehcelgfmhbmo)
