@@ -9,6 +9,7 @@
 		"200": "icon.png"
 	},
 	"permissions": ["contextMenus", "https://www.google.com/url?*"],
+  "optional_permissions": ["https://*/*"],
 	"background": {
 		"persistent": false,
 		"scripts": ["browser-polyfill.min.js", "background.js"]
