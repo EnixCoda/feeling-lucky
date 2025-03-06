@@ -1,18 +1,18 @@
 {
 	"name": "Feeling Lucky",
-	"version": "2.0.0",
-	"description": "Quick search selected text using Google's I'm feeling lucky.",
+	"version": "3.0.0",
+	"description": "Instant search selected text with \"I'm feeling lucky\" by Google.",
 	"homepage_url": "https://github.com/EnixCoda/feeling-lucky",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"icons": {
 		"64": "icon_64.png",
 		"200": "icon.png"
 	},
-	"permissions": ["contextMenus", "https://www.google.com/url?*"],
-  "optional_permissions": ["https://*/*"],
+	"permissions": ["contextMenus"],
+	"host_permissions": ["https://www.google.com/url?*"],
+	"optional_host_permissions": ["https://*/*"],
 	"background": {
-		"persistent": false,
-		"scripts": ["browser-polyfill.min.js", "background.js"]
+		"service_worker": "background.js"
 	},
 	"content_scripts": [
 		{

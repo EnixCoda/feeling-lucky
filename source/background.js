@@ -1,10 +1,11 @@
-import addDomainPermissionToggle from 'webext-domain-permission-toggle'
-import 'webext-dynamic-content-scripts'
+import addDomainPermissionToggle from "webext-permission-toggle";
+import "webext-dynamic-content-scripts";
+import browser from "webextension-polyfill";
 
 addDomainPermissionToggle({
-  title: 'Enable Feeling Lucky on this domain',
-  reloadOnSuccess: 'Refresh to activate?',
-})
+	title: "Enable Feeling Lucky on this domain",
+	reloadOnSuccess: "Refresh to activate?"
+});
 
 browser.runtime.onInstalled.addListener(function() {
 	browser.contextMenus.create({
