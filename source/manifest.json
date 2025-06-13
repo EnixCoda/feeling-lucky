@@ -8,16 +8,27 @@
 		"64": "icon_64.png",
 		"200": "icon.png"
 	},
-	"permissions": ["contextMenus"],
-	"host_permissions": ["https://www.google.com/url?*"],
-	"optional_host_permissions": ["https://*/*"],
+	"permissions": [
+		"scripting",
+		"contextMenus"
+	],
+	"host_permissions": [
+		"https://www.google.com/url?*"
+	],
+	"optional_host_permissions": [
+		"https://*/*"
+	],
 	"background": {
 		"service_worker": "background.js"
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://www.google.com/url?*"],
-			"js": ["content.js"]
+			"matches": [
+				"https://www.google.com/url?*"
+			],
+			"js": [
+				"content.js"
+			]
 		}
 	]
 }

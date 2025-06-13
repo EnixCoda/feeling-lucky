@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "webpack --mode=production",
+		"build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode=production",
 		"lint": "run-p lint:*",
 		"lint-fix": "run-p 'lint:* -- --fix'",
 		"lint:css": "stylelint source/**/*.css",
@@ -9,7 +9,7 @@
 		"release:chrome": "cd distribution && webstore upload --auto-publish",
 		"release:firefox": "cd distribution && web-ext-submit",
 		"test": "run-s lint:* build",
-		"watch": "webpack --mode=development --watch"
+		"watch": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode=development --watch"
 	},
 	"xo": {
 		"envs": [
