@@ -4,7 +4,6 @@
 		"build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode=production",
 		"lint": "run-p lint:*",
 		"lint-fix": "run-p 'lint:* -- --fix'",
-		"lint:css": "stylelint source/**/*.css",
 		"lint:js": "xo",
 		"release:chrome": "cd distribution && webstore upload --auto-publish",
 		"release:firefox": "cd distribution && web-ext-submit",
