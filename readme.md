@@ -1,21 +1,18 @@
-# Feeling lucky
+# 🎯 Feeling Lucky
 
-This extension is for the lucky ones. It works as a quick access Google's I'm feeling lucky.
+A lightweight browser extension that sends selected text directly to Google’s `I’m Feeling Lucky` result — skip the search page and go straight to the top result.
 
-## Usage
-
-1. Select text
-2. Open context menu and click `Feeling lucky`
-3. You are taken to the website that matches the keyword best.
-
-![use example](./media/introduction.png)
-
-### Auto redirect
-
-![auto redirect](./media/autoRedirect.png)
-
-If you are taken to domains other than `google.com`, e.g. `google.com.hk`, before hitting your lucky result. You can activate this extension on that domain to enable auto-skip in the future.
-
-## Install
+## 🧩 Installation
 
 [![Install for Chrome](./media/ChromeWebStoreBadge.svg)](https://chrome.google.com/webstore/detail/feeling-lucky/gkpblaimadclmdfppcoeehcelgfmhbmo)
+
+## ✨ Features
+
+- 🔍 Right-click + Go: Highlight any text, right-click, and hit Feeling Lucky.
+
+  ![usage example](./media/introduction.png)
+
+- 🌍 Smart redirect: Automatically handles the redirection page
+
+  Please manually enable this on regional Google domains like `google.com.hk` via extension menu.
+  ![auto redirect on regional domain](./media/autoRedirect.png)
